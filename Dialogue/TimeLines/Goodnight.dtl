@@ -1,0 +1,7 @@
+Parents: Goodnight Ben..
+Parents: Make sure to turn off the lights before you sleep.
+- Alright... Goodnight as well.
+	Parents: Sleep tight and sweet dreams ben.
+	Parents: ........................ .............. .....
+	Ben: Alright.... It's time to go to bed.
+	[signal arg="go_sleep"]

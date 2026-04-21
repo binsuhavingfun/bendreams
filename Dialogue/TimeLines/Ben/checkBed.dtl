@@ -1,0 +1,9 @@
+if {Bedroom.windowClosed} == false:
+	elif {Bedroom.doorClosed} == false:
+		Ben: It's best that I close everything first
+	elif {Bedroom.doorClosed} == true:
+		Ben: I should probably close the windows before going to sleep.
+elif {Bedroom.doorClosed} == false:
+	Ben: I should probably close the doors before going to sleep.
+elif {Bedroom.switchOn} == true:
+	Ben: They said that I should turn the lights off before going to sleep.

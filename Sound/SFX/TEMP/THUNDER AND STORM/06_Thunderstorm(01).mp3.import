@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cb6konoo0c7ow"
+path="res://.godot/imported/06_Thunderstorm(01).mp3-976ac1c48189550f0403bb48d088459a.mp3str"
+
+[deps]
+
+source_file="res://Sound/SFX/TEMP/THUNDER AND STORM/06_Thunderstorm(01).mp3"
+dest_files=["res://.godot/imported/06_Thunderstorm(01).mp3-976ac1c48189550f0403bb48d088459a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://b32hjued2rxe"]
+
+[ext_resource type="Theme" uid="uid://yjllmaelw1h7" path="res://Common/Theme/pmenu.tres" id="1_ti6ix"]
+[ext_resource type="FontFile" uid="uid://ci4l8lprqx3tv" path="res://Common/Fonts/CoveredByYourGrace-Regular.ttf" id="2_l1q35"]
+[ext_resource type="AudioStream" uid="uid://bpca743gk15fm" path="res://Sound/SFX/OFF/UI/Game Over.mp3" id="3_dg0t1"]
+[ext_resource type="AudioStream" uid="uid://b3jr3kwey0py6" path="res://Sound/BGM/ENDING THEME.mp3" id="4_oyxwm"]
+
+[node name="GAME SCREEN" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0392157, 0.0392157, 0.0392157, 0.94902)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_ti6ix")
+theme_override_fonts/font = ExtResource("2_l1q35")
+text = "THE END"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Menu" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../QuitButton")
+focus_next = NodePath("../QuitButton")
+theme = ExtResource("1_ti6ix")
+theme_override_colors/font_color = Color(0.596078, 0.596078, 0.596078, 1)
+theme_override_colors/font_pressed_color = Color(0.807843, 0.8, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 0.443137, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 0.443137, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.807843, 0.8, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+text = "Menu
+"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Menu")
+focus_previous = NodePath("../Menu")
+theme = ExtResource("1_ti6ix")
+theme_override_colors/font_color = Color(0.596078, 0.596078, 0.596078, 1)
+theme_override_colors/font_pressed_color = Color(0.806127, 0.798622, 3.85046e-07, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 0.443137, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 0.443137, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.513726, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.807843, 0.8, 0, 1)
+text = "Quit"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_dg0t1")
+
+[node name="bgmusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_oyxwm")
+autoplay = true

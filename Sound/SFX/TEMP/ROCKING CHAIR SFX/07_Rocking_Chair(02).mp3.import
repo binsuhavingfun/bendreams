@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btm31jfxlqkcm"
+path="res://.godot/imported/07_Rocking_Chair(02).mp3-bf8160bf8c627a39a21d14700d61aee5.mp3str"
+
+[deps]
+
+source_file="res://Sound/SFX/TEMP/ROCKING CHAIR SFX/07_Rocking_Chair(02).mp3"
+dest_files=["res://.godot/imported/07_Rocking_Chair(02).mp3-bf8160bf8c627a39a21d14700d61aee5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

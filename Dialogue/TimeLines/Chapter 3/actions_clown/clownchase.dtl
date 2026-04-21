@@ -1,0 +1,12 @@
+Ben: Who?!
+Ben: What is happening...
+Clown: You can't run that far! Hahahaha
+Ben: I have to think fast...
+- Hide
+	set {Corridor.NextScene} = true
+	set {Corridor.Hiding} = true
+	[end_timeline]
+- Just continue running
+	set {Corridor.NextScene} = true
+	set {Corridor.Running} = true
+	[end_timeline]

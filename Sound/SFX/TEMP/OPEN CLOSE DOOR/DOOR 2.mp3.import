@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bqfgx1wgeq2th"
+path="res://.godot/imported/DOOR 2.mp3-7a529680463a8d21bb7b6e5abbdbf1f9.mp3str"
+
+[deps]
+
+source_file="res://Sound/SFX/TEMP/OPEN CLOSE DOOR/DOOR 2.mp3"
+dest_files=["res://.godot/imported/DOOR 2.mp3-7a529680463a8d21bb7b6e5abbdbf1f9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

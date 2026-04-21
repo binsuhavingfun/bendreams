@@ -1,0 +1,3 @@
+- Interact
+	Ben: Do you think playing a lullaby could help me go to sleep?
+	[signal arg="stop_chat"]

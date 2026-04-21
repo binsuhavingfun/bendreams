@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cprvanodvp6k0"
+path="res://.godot/imported/05_Open_and_Close_Window.mp3-f29eca91fa3f739a02ff41dcefddc404.mp3str"
+
+[deps]
+
+source_file="res://Sound/SFX/TEMP/OPEN CLOSE DOOR/05_Open_and_Close_Window.mp3"
+dest_files=["res://.godot/imported/05_Open_and_Close_Window.mp3-f29eca91fa3f739a02ff41dcefddc404.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

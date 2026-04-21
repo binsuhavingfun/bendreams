@@ -1,0 +1,13 @@
+if {Corridor.alreadySet} == false:
+	[signal arg="set_piano"]
+elif {Corridor.alreadySet} == true:
+	if {Corridor.PianoInteractable} == true:
+		- Play the piano
+			[signal arg="play_piano"]
+		- Do nothing
+			Ben: What am I doing..
+			Ben: It's past midnight why am I trying to play the piano?
+			Ben: I should just get back to bed.
+			[signal arg="afterpiano"]
+	elif {PianoInteractable} == false:
+		Ben: I should hurry back and go to bed.

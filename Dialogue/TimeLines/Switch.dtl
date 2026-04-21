@@ -1,0 +1,6 @@
+if {Bedroom.switchOn} == false:
+	- Turn Lights On
+		[signal arg="switchOn"]
+elif {Bedroom.switchOn} == true:
+	- Turn Lights Off
+		[signal arg="switchOff"]

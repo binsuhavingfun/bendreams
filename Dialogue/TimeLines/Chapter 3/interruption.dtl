@@ -1,0 +1,9 @@
+Ben: *yawn*
+Ben: I should really go to sleep
+[sound path="res://Sound/SFX/OFF/door/Creaking Door.wav" volume="0.0"]
+[wait time="0.5"]
+[signal arg="character_turn"]
+[wait time="0.5"]
+Ben: H-huh?
+Ben: Wh-who could that be?
+[signal arg="animation"]

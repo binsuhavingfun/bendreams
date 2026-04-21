@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5avfkpq32d2u"
+path="res://.godot/imported/BREAKING GLASS 1.mp3-18da95618d5ec7d963c7161c699db007.mp3str"
+
+[deps]
+
+source_file="res://Sound/SFX/TEMP/GLASS BREAKING/BREAKING GLASS 1.mp3"
+dest_files=["res://.godot/imported/BREAKING GLASS 1.mp3-18da95618d5ec7d963c7161c699db007.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

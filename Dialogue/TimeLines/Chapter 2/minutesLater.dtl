@@ -1,0 +1,8 @@
+Narrator: Ben woke up frantically from his bed.
+[wait time="1.0"]
+- *Inhale*
+	Ben: *huff* *huff* ..... ..
+	Ben: What... Was that... A nightmare?
+	Ben: Phew...
+	Ben: It's still late in the evening.. I should go back to sleep.
+	[signal arg="awake"]

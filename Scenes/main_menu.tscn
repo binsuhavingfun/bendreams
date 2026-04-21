@@ -1,0 +1,105 @@
+[gd_scene load_steps=13 format=3 uid="uid://dpkd3rfhv7fyf"]
+
+[ext_resource type="Theme" uid="uid://c5fjhncghjrje" path="res://Common/Theme/menu.tres" id="1_4sa26"]
+[ext_resource type="Script" path="res://Scripts/Scene Controls/Menu.gd" id="2_npd2a"]
+[ext_resource type="Shader" uid="uid://cyavggevivw3n" path="res://Common/Shader/Bedroom.tres" id="3_7rmxi"]
+[ext_resource type="AudioStream" uid="uid://eqth05o7aact" path="res://Sound/BGM/MENU THEME.mp3" id="3_coj70"]
+[ext_resource type="Texture2D" uid="uid://keeyjh5ondj6" path="res://Scenes/Backdrops/Corridor/LIGHT/wall.png" id="4_dll33"]
+[ext_resource type="Texture2D" uid="uid://vlw5o7f1xo04" path="res://Scenes/Objects/Chapter 2/door.png" id="5_pwgw6"]
+[ext_resource type="Texture2D" uid="uid://bfsg2l83055or" path="res://Scenes/Backdrops/Corridor/LIGHT/floor.png" id="6_nwx86"]
+[ext_resource type="Texture2D" uid="uid://c7x3wcvaran7f" path="res://Characters/Ben/Animations/IDLE/idle.png" id="7_4vp0m"]
+[ext_resource type="Texture2D" uid="uid://bneumscla5bv4" path="res://Characters/Shadow Ben/ben shadow.png" id="8_2uw66"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_op76u"]
+shader = ExtResource("3_7rmxi")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p1ac3"]
+shader = ExtResource("3_7rmxi")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_osyut"]
+shader = ExtResource("3_7rmxi")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("2_npd2a")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_coj70")
+volume_db = -20.0
+autoplay = true
+
+[node name="Wall" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_op76u")
+position = Vector2(-238, 133)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_dll33")
+
+[node name="Door" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_p1ac3")
+position = Vector2(-414, 115)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_pwgw6")
+
+[node name="Floor" type="Sprite2D" parent="."]
+z_index = 1
+material = SubResource("ShaderMaterial_osyut")
+position = Vector2(0, 56)
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("6_nwx86")
+
+[node name="Ben" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(559, 331)
+texture = ExtResource("7_4vp0m")
+flip_h = true
+
+[node name="BenShadow" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+position = Vector2(360, 222)
+texture = ExtResource("8_2uw66")
+flip_h = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -922.0
+offset_top = 4.0
+offset_right = -581.0
+offset_bottom = 580.0
+grow_vertical = 0
+mouse_filter = 0
+theme = ExtResource("1_4sa26")
+
+[node name="ContinueButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../QuitButton")
+focus_neighbor_bottom = NodePath("../StartButton")
+focus_next = NodePath("../StartButton")
+focus_previous = NodePath("../QuitButton")
+text = "Continue
+"
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../ContinueButton")
+focus_previous = NodePath("../ContinueButton")
+text = "Start"
+alignment = 0
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../ContinueButton")
+focus_next = NodePath("../ContinueButton")
+text = "Quit"
+alignment = 0
+
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
+[connection signal="pressed" from="VBoxContainer/ContinueButton" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

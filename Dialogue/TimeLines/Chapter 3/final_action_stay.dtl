@@ -1,0 +1,3 @@
+if {Corridor.noClo} == 5:
+	Clown: Hehehehe.....
+	[signal arg="action_stay"]

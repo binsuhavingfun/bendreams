@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b0fhtpoa5anoa"
+path="res://.godot/imported/Clown Jumpscare.mp3-50317ee5c73a07c2f7431daa669444b1.mp3str"
+
+[deps]
+
+source_file="res://Sound/SFX/OFF/jumpscares/Clown Jumpscare.mp3"
+dest_files=["res://.godot/imported/Clown Jumpscare.mp3-50317ee5c73a07c2f7431daa669444b1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

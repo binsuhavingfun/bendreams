@@ -1,0 +1,6 @@
+if {Bedroom.windowClosed} == true:
+	- Open Window
+		[signal arg="windowOpen"]
+elif {Bedroom.windowClosed} == false:
+	- Close Window
+		[signal arg="windowClosed"]

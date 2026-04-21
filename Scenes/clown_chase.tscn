@@ -1,0 +1,2377 @@
+[gd_scene load_steps=79 format=3 uid="uid://eswdp45wlhgd"]
+
+[ext_resource type="Script" path="res://Scripts/Clown Chase.gd" id="1_v0edd"]
+[ext_resource type="Texture2D" uid="uid://c6lbdm5mf5kp5" path="res://Characters/Clown/Clown Dark/run3D.png" id="12_ey3dq"]
+[ext_resource type="Texture2D" uid="uid://b7vqfyqrxkdje" path="res://Characters/Clown/Clown Dark/run1D.png" id="13_3k61f"]
+[ext_resource type="Texture2D" uid="uid://wkc0n013kq46" path="res://Characters/Clown/Clown Dark/run2D.png" id="14_1748o"]
+[ext_resource type="Texture2D" uid="uid://c23e4gjojl4wb" path="res://Characters/Clown/Clown Dark/run4D.png" id="15_p05d3"]
+[ext_resource type="Texture2D" uid="uid://bsc4tpochciar" path="res://Characters/Clown/Clown Dark/run5D.png" id="16_4e2ln"]
+[ext_resource type="Script" path="res://Scripts/Parallax.gd" id="17_fqnb3"]
+[ext_resource type="Texture2D" uid="uid://kewahtnir8xa" path="res://Scenes/Backdrops/Corridor/DARK/wall DARK2.png" id="21_ge78i"]
+[ext_resource type="Texture2D" uid="uid://bpulig4iqayly" path="res://Scenes/Backdrops/Corridor/DARK/door DARK.png" id="22_tuchv"]
+[ext_resource type="Script" path="res://Scripts/Basic Scripts/CharacterAnimation.gd" id="23_jt0cr"]
+[ext_resource type="Texture2D" uid="uid://cqwsq8jyb05n5" path="res://Scenes/Backdrops/Corridor/DARK/floor DARK2.png" id="23_py6l5"]
+[ext_resource type="PackedScene" uid="uid://cyj781uqe6egl" path="res://Scenes/GUI.tscn" id="24_glkfb"]
+[ext_resource type="Texture2D" uid="uid://o8qwgd5yg41a" path="res://Scenes/Backdrops/Corridor/DARK/wall DARK.png" id="24_h2j2w"]
+[ext_resource type="Texture2D" uid="uid://cd0hmf4ctoegw" path="res://Scenes/Backdrops/Corridor/DARK/wall n floor DARK.png" id="24_kbie0"]
+[ext_resource type="Texture2D" uid="uid://d0oqsfb8gxily" path="res://Characters/Ben/Animations/WALK/DARK/walk3D.png" id="25_2kloj"]
+[ext_resource type="Texture2D" uid="uid://cspx01equij1q" path="res://Scenes/Backdrops/Corridor/DARK/lfurniture.png" id="25_u5e3k"]
+[ext_resource type="Texture2D" uid="uid://c65uqkx78vhrl" path="res://Scenes/Backdrops/Corridor/DARK/floor DARK.png" id="25_yofld"]
+[ext_resource type="Texture2D" uid="uid://nq6m5jpqmttw" path="res://Scenes/Backdrops/Corridor/DARK/right frame.png" id="26_l5mbd"]
+[ext_resource type="Texture2D" uid="uid://b3jl4awm3osp1" path="res://Scenes/Backdrops/Corridor/DARK/Door DARK2.png" id="26_s00jh"]
+[ext_resource type="Texture2D" uid="uid://b5g1hpqdnaxr4" path="res://Characters/Ben/Animations/WALK/DARK/walk1D.png" id="26_vkf1j"]
+[ext_resource type="Texture2D" uid="uid://cn16uav3g4c3v" path="res://Scenes/Objects/Chapter 2/piano DARK2.png" id="27_63pdg"]
+[ext_resource type="Texture2D" uid="uid://cpyi01rx1lpva" path="res://Characters/Ben/Animations/WALK/DARK/walk2D.png" id="27_tom5e"]
+[ext_resource type="Texture2D" uid="uid://gywpkvxh3h8i" path="res://Scenes/Backdrops/Corridor/DARK/lamp.png" id="27_ub41n"]
+[ext_resource type="Texture2D" uid="uid://dmmgv2wsn1a16" path="res://Scenes/Backdrops/Corridor/DARK/left frame.png" id="28_einji"]
+[ext_resource type="Texture2D" uid="uid://cn6hwwl5l6ia3" path="res://Characters/Ben/Animations/WALK/DARK/walk4D.png" id="28_gcuw8"]
+[ext_resource type="Script" path="res://Scripts/Basic Scripts/Zey-Index.gd" id="28_vkp0d"]
+[ext_resource type="Texture2D" uid="uid://cm3d3hjamgex" path="res://Scenes/Backdrops/Corridor/DARK/drawer.png" id="29_634aj"]
+[ext_resource type="Texture2D" uid="uid://dgrexlu8ysuy1" path="res://Scenes/Backdrops/Bedroom/Light Mode/screen effect.png" id="29_ih5kf"]
+[ext_resource type="Texture2D" uid="uid://dvohynuxhw4mv" path="res://Scenes/Backdrops/Corridor/DARK/justfurniture.png" id="30_8mras"]
+[ext_resource type="Texture2D" uid="uid://pulocxiklus1" path="res://Scenes/Backdrops/Bedroom/Dark Mode/walls.png" id="30_s80rg"]
+[ext_resource type="Texture2D" uid="uid://4bc7furhm7co" path="res://Scenes/Backdrops/Corridor/DARK/rfurniture.png" id="31_mu3a4"]
+[ext_resource type="Texture2D" uid="uid://dtcnrtrgjhwvu" path="res://Scenes/Objects/Chapter 1/States/Dark Mode/window close.png" id="31_tx1es"]
+[ext_resource type="Texture2D" uid="uid://db341k7veeghy" path="res://Scenes/Objects/Chapter 1/States/Dark Mode/door closed.png" id="32_0u12x"]
+[ext_resource type="Script" path="res://Scripts/Basic Scripts/Zey-Index2.gd" id="33_e4cww"]
+[ext_resource type="Texture2D" uid="uid://b6nn223doakp7" path="res://Scenes/Objects/Chapter 1/States/Dark Mode/door open.png" id="34_2ojdt"]
+[ext_resource type="Texture2D" uid="uid://deu30p8uhlv3y" path="res://Scenes/Backdrops/Bedroom/Dark Mode/floor.png" id="35_p0o7y"]
+[ext_resource type="Texture2D" uid="uid://s8jsfmfhvfvn" path="res://Scenes/Backdrops/Bedroom/Dark Mode/lamp.png" id="36_t4o6u"]
+[ext_resource type="Texture2D" uid="uid://r0ywqctflypi" path="res://Scenes/Objects/Chapter 1/States/Dark Mode/mirror.png" id="37_a85jc"]
+[ext_resource type="Texture2D" uid="uid://dhrcm8ror4e0g" path="res://Scenes/Backdrops/Bedroom/Dark Mode/Rugs.png" id="38_mqq4x"]
+[ext_resource type="Texture2D" uid="uid://c3daei6fw3ydc" path="res://Scenes/Objects/Chapter 1/States/Dark Mode/switch on.png" id="39_7y16l"]
+[ext_resource type="Texture2D" uid="uid://c5ln57shm4y8l" path="res://Scenes/Backdrops/Bedroom/Dark Mode/Drawer.png" id="40_sw7pw"]
+[ext_resource type="Texture2D" uid="uid://chbr56jq07wmb" path="res://Scenes/Objects/Chapter 1/States/Dark Mode/top light.png" id="41_hexmt"]
+[ext_resource type="Texture2D" uid="uid://d3p7bqhagg850" path="res://Scenes/Objects/Chapter 1/States/Dark Mode/bed.png" id="42_0bvlx"]
+[ext_resource type="AudioStream" uid="uid://df5j62c513b5v" path="res://Sound/SFX/OFF/door/door_opening .wav" id="43_ousre"]
+[ext_resource type="AudioStream" uid="uid://bxri3074n2vw8" path="res://Sound/SFX/OFF/door/door_closing.wav" id="44_ohium"]
+[ext_resource type="AudioStream" uid="uid://b0fhtpoa5anoa" path="res://Sound/SFX/OFF/jumpscares/Clown Jumpscare.mp3" id="45_rsk78"]
+[ext_resource type="Texture2D" uid="uid://vwry5g3xlvlq" path="res://Scenes/Objects/Chapter 2/door interactable (dark ver) .png" id="46_0dtak"]
+[ext_resource type="Texture2D" uid="uid://43dcl4nqhkqw" path="res://Scenes/Objects/Chapter 2/clock interactable.png" id="47_b5obr"]
+[ext_resource type="Texture2D" uid="uid://fpkfvpua7pf4" path="res://Scenes/Objects/Chapter 2/door interactable.png" id="48_xwm0i"]
+[ext_resource type="Texture2D" uid="uid://bnmwldsanjed8" path="res://Scenes/Objects/Chapter 2/piano interactable DARK.png" id="49_15d8u"]
+[ext_resource type="AudioStream" uid="uid://bomom63dvlmvq" path="res://Sound/SFX/OFF/UI/Wrong Choice.mp3" id="51_lqh8d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_brj6i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_ey3dq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_3k61f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1748o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ey3dq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_p05d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4e2ln")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_7kvvg"]
+script/source = "extends AnimatedSprite2D
+
+var state;
+
+enum{IDLE, MOVE}
+ 
+func _ready():
+	state = IDLE
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+func change_state(newState):
+	state = newState
+	match state: 
+		IDLE:
+			self.play(\"idle\")
+		MOVE:
+			self.play(\"move\")
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gthnk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_2kloj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_vkf1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_tom5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2kloj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_tom5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_gcuw8")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_2kloj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_vkf1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_tom5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_vkf1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2kloj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_gcuw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_tom5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_gcuw8")
+}],
+"loop": true,
+"name": &"run",
+"speed": 6.0
+}]
+
+[sub_resource type="Animation" id="Animation_bs3hc"]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Intro/Hallway:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Intro/Hallway:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Intro/Ben:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-552, 1238)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Intro/Ben:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.6, 1.6)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Intro/Clown:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.6, 1.6)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Intro/Clown:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(492, 1635)]
+}
+
+[sub_resource type="Animation" id="Animation_w8yy8"]
+resource_name = "on_screen"
+length = 7.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Intro/Hallway:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 3.5, 4.3, 4.6, 7.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(2.1, 2.1), Vector2(1.7, 1.7), Vector2(1.7, 1.7), Vector2(2.1, 2.1), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Intro/Hallway:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5, 3.5, 4.3, 4.6, 7.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2829, 542), Vector2(5793, 127), Vector2(2982, 443), Vector2(2982, 443), Vector2(3898, 663), Vector2(341, 533)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Intro/Ben:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.2, 2.5, 4.3, 5.5, 7.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-552, 1238), Vector2(1400, 1238), Vector2(2400, 1238), Vector2(2841, 1418), Vector2(1516, 970)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Intro/Ben:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.2, 3.5, 5.5, 7.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.6, 1.6), Vector2(1.3, 1.3), Vector2(1.1, 1.1), Vector2(0.6, 0.6)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Intro/Clown:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(4.9, 7.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.6, 1.6), Vector2(0.7, 0.7)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Intro/Clown:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(4.5, 4.9, 7.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-999, 1635), Vector2(492, 1635), Vector2(284, 971)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ifl5v"]
+_data = {
+"RESET": SubResource("Animation_bs3hc"),
+"on_screen": SubResource("Animation_w8yy8")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c1ady"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_ey3dq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_3k61f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1748o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ey3dq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_p05d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4e2ln")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_1xkra"]
+script/source = "extends AnimatedSprite2D
+
+var state;
+
+enum{IDLE, MOVE}
+ 
+func _ready():
+	state = IDLE
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+func change_state(newState):
+	state = newState
+	match state: 
+		IDLE:
+			self.play(\"idle\")
+		MOVE:
+			self.play(\"move\")
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vpgkp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_2kloj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_vkf1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_tom5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2kloj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_tom5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_gcuw8")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_2kloj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_vkf1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_tom5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_vkf1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2kloj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_gcuw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_tom5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_gcuw8")
+}],
+"loop": true,
+"name": &"run",
+"speed": 6.0
+}]
+
+[sub_resource type="Animation" id="Animation_pws33"]
+resource_name = "Intrance"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hallway:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.4, 1.4)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hallway:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1865, 460), Vector2(1865, 460), Vector2(709, 460)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Ben:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-988, 1082), Vector2(912, 1082)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Ben:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Clown:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_pkdxj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hallway:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.4, 1.4)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hallway:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1865, 460)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Ben:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-176, 1082)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Ben:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Ben:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Clown:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(218, 1090)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Clown:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Clown:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Clown:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_qwdwh"]
+resource_name = "getting_inside"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ben:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(912, 1082), Vector2(720, 988)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ben:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Hallway:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(3, 3.5, 6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(709, 460), Vector2(2075, 460), Vector2(852, 460)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Clown:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2.5, 4, 6, 7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-2332, 1066), Vector2(-2332, 1066), Vector2(218, 1090), Vector2(218, 1090), Vector2(651, 1028)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Clown:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(4),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Clown:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(7, 8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Clown:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gahyr"]
+_data = {
+"Intrance": SubResource("Animation_pws33"),
+"RESET": SubResource("Animation_pkdxj"),
+"getting_inside": SubResource("Animation_qwdwh")
+}
+
+[sub_resource type="Animation" id="Animation_6s4we"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Room:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1370, 523)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Room:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.5, 1.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Room/DoorClose:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Room/DoorOpen:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Room/door_open:playing")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Ben:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(319, 934)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Ben:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Ben:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Room/door_close:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Clown:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Clown:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(450, 1040)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Clown:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.7, 0.7)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Clown:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.162562]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("jscare:playing")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_ydo0n"]
+resource_name = "inside"
+length = 5.75
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Room:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.5, 5.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1370, 523), Vector2(1370, 523), Vector2(815, 357)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Room:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.5, 1.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Room/DoorClose:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 2.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Room/DoorOpen:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5, 2.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Room/door_open:playing")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Ben:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.2, 4.5, 5.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(319, 934), Vector2(1463, 1055), Vector2(893, 840)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Ben:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(1.2),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.8, 0.8)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Ben:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Room/door_close:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(1.6),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_0ofiw"]
+resource_name = "me_aswell"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ben:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 1, 1.4, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(893, 840), Vector2(1545, 1228), Vector2(1545, 1228), Vector2(1892, 1243), Vector2(1451, 992), Vector2(1451, 992)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Room:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 1, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(815, 357), Vector2(1448, 750), Vector2(1448, 750), Vector2(1063, 591)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Clown:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Room/DoorClose:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Room/DoorOpen:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Room/door_open:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Clown:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.4, 1, 1.4, 2, 2.3, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(322, 1276), Vector2(721, 1276), Vector2(512, 998), Vector2(512, 998), Vector2(542, 869), Vector2(788, 824)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Room:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 1, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1.5, 1.5), Vector2(1.5, 1.5), Vector2(1.1, 1.1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Clown:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.4, 1.4, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.65, 0.6), Vector2(0.65, 0.6)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Ben:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 1, 1.4, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.8, 0.8), Vector2(0.8, 0.8), Vector2(0.55, 0.55), Vector2(0.55, 0.55)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Clown:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 2, 2.3, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.162562, 0.440412]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("jscare:playing")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(2.3),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bo2vm"]
+_data = {
+"RESET": SubResource("Animation_6s4we"),
+"inside": SubResource("Animation_ydo0n"),
+"me_aswell": SubResource("Animation_0ofiw")
+}
+
+[sub_resource type="Animation" id="Animation_lcar2"]
+resource_name = "getting_out"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hallway:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(3511, 401), Vector2(-1450, 401)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hallway:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.5, 1.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Clown:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.7, 0.9, 1.6, 1.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-292, 1130), Vector2(130, 1130), Vector2(323, 1130), Vector2(-68, 1130), Vector2(-378, 1130)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Clown:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.1, 1.1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Ben:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.1, 1.4, 1.9, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1441, 1126), Vector2(1293, 1126), Vector2(1630, 1126), Vector2(885, 1126), Vector2(1927, 1126)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Ben:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_7mamc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hallway:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3511, 401)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hallway:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.5, 1.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Clown:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-292, 1130)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Clown:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.1, 1.1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Ben:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1441, 1126)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Ben:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dupwn"]
+_data = {
+"RESET": SubResource("Animation_7mamc"),
+"getting_out": SubResource("Animation_lcar2")
+}
+
+[sub_resource type="Animation" id="Animation_qg5vi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ben:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-650, 961)]
+}
+
+[sub_resource type="Animation" id="Animation_ex1k7"]
+resource_name = "safe"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ben:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-650, 961), Vector2(528.86, 961)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6wgaq"]
+_data = {
+"RESET": SubResource("Animation_qg5vi"),
+"safe": SubResource("Animation_ex1k7")
+}
+
+[sub_resource type="Animation" id="Animation_hug30"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade/ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_p8dft"]
+resource_name = "fade_in"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade/ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_77qr8"]
+resource_name = "fade_out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade/ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vdm3m"]
+_data = {
+"RESET": SubResource("Animation_hug30"),
+"fade_in": SubResource("Animation_p8dft"),
+"fade_out": SubResource("Animation_77qr8")
+}
+
+[node name="Clown Chase" type="Node2D"]
+script = ExtResource("1_v0edd")
+
+[node name="Intro" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Hallway" type="CanvasGroup" parent="Intro"]
+position = Vector2(-2, 0)
+
+[node name="Wall" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 1
+texture = ExtResource("24_h2j2w")
+metadata/_edit_lock_ = true
+
+[node name="Wall3" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 1
+position = Vector2(-1867.82, 0)
+texture = ExtResource("24_h2j2w")
+metadata/_edit_lock_ = true
+
+[node name="Wall2" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 1
+position = Vector2(1600, 0)
+texture = ExtResource("24_h2j2w")
+metadata/_edit_lock_ = true
+
+[node name="Floor" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 2
+texture = ExtResource("25_yofld")
+metadata/_edit_lock_ = true
+
+[node name="Floor3" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 2
+position = Vector2(-1900, 0)
+texture = ExtResource("25_yofld")
+metadata/_edit_lock_ = true
+
+[node name="Floor2" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 2
+position = Vector2(1600, 0)
+texture = ExtResource("25_yofld")
+metadata/_edit_lock_ = true
+
+[node name="RightFrame" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 3
+position = Vector2(26.75, 0)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightFrame3" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 3
+position = Vector2(-3443.97, 0)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightFrame2" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 3
+position = Vector2(-1570, -2.98023e-08)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 3
+position = Vector2(47, 0)
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp3" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 3
+position = Vector2(-3419.7, 0)
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp2" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 3
+position = Vector2(-1549, 0)
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="LeftFrame" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 3
+position = Vector2(137, 0)
+texture = ExtResource("28_einji")
+metadata/_edit_lock_ = true
+
+[node name="LeftFrame2" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 3
+position = Vector2(1991, 0)
+texture = ExtResource("28_einji")
+metadata/_edit_lock_ = true
+
+[node name="LeftDrawer" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 3
+position = Vector2(1976, 0)
+texture = ExtResource("29_634aj")
+metadata/_edit_lock_ = true
+
+[node name="LeftDrawer2" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 3
+position = Vector2(164.42, 0)
+texture = ExtResource("29_634aj")
+metadata/_edit_lock_ = true
+
+[node name="FurnitureRight" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 3
+position = Vector2(-1888, 0)
+texture = ExtResource("30_8mras")
+metadata/_edit_lock_ = true
+
+[node name="Rfurniture" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 1
+position = Vector2(1439.46, -3.6965)
+texture = ExtResource("31_mu3a4")
+
+[node name="FurnitureLeft" type="Sprite2D" parent="Intro/Hallway"]
+z_index = 3
+position = Vector2(-1932, 0)
+texture = ExtResource("31_mu3a4")
+metadata/_edit_lock_ = true
+
+[node name="Clown" type="CharacterBody2D" parent="Intro"]
+z_index = 3
+position = Vector2(492, 1635)
+scale = Vector2(1.6, 1.6)
+
+[node name="ClownSprite" type="AnimatedSprite2D" parent="Intro/Clown"]
+position = Vector2(15.9999, 8)
+scale = Vector2(0.758036, 0.651339)
+sprite_frames = SubResource("SpriteFrames_brj6i")
+animation = &"idle"
+offset = Vector2(120, -720)
+script = SubResource("GDScript_7kvvg")
+
+[node name="Ben" type="CharacterBody2D" parent="Intro"]
+z_index = 1
+position = Vector2(-552, 1238)
+scale = Vector2(1.6, 1.6)
+motion_mode = 1
+script = ExtResource("17_fqnb3")
+
+[node name="Ben_Sprite" type="AnimatedSprite2D" parent="Intro/Ben"]
+z_index = 4
+position = Vector2(16.7144, 5)
+scale = Vector2(0.555365, 0.535768)
+sprite_frames = SubResource("SpriteFrames_gthnk")
+animation = &"run"
+offset = Vector2(-15, -600.465)
+script = ExtResource("23_jt0cr")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Intro"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_ifl5v")
+}
+
+[node name="Hid" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Hallway" type="CanvasGroup" parent="Hid"]
+position = Vector2(1865, 460)
+scale = Vector2(1.4, 1.4)
+
+[node name="Wall" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 1
+texture = ExtResource("24_h2j2w")
+metadata/_edit_lock_ = true
+
+[node name="Wall2" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 1
+position = Vector2(1600, 0)
+texture = ExtResource("21_ge78i")
+metadata/_edit_lock_ = true
+
+[node name="Door" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 2
+texture = ExtResource("22_tuchv")
+metadata/_edit_lock_ = true
+
+[node name="Floor" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 2
+texture = ExtResource("25_yofld")
+metadata/_edit_lock_ = true
+
+[node name="Floor2" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 2
+position = Vector2(1600, 0)
+texture = ExtResource("23_py6l5")
+metadata/_edit_lock_ = true
+
+[node name="WallAndFloor" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 2
+position = Vector2(-1919, 0)
+texture = ExtResource("24_kbie0")
+metadata/_edit_lock_ = true
+
+[node name="RightFrame" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 3
+position = Vector2(26.75, 0)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightFrame2" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 3
+position = Vector2(-1570, -2.98023e-08)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 3
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp2" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 3
+position = Vector2(-1631.36, 0)
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="LeftFrame" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 3
+position = Vector2(159.395, 0)
+texture = ExtResource("28_einji")
+metadata/_edit_lock_ = true
+
+[node name="LeftFrame3" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 3
+position = Vector2(3123, 113)
+texture = ExtResource("28_einji")
+metadata/_edit_lock_ = true
+
+[node name="LeftFrame2" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 3
+position = Vector2(1991, 0)
+texture = ExtResource("28_einji")
+metadata/_edit_lock_ = true
+
+[node name="LeftDrawer" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 3
+position = Vector2(1976, 0)
+texture = ExtResource("29_634aj")
+metadata/_edit_lock_ = true
+
+[node name="LeftDrawer2" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 3
+position = Vector2(48, 0)
+texture = ExtResource("29_634aj")
+metadata/_edit_lock_ = true
+
+[node name="FurnitureRight" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 3
+position = Vector2(-1937.61, 0)
+texture = ExtResource("31_mu3a4")
+metadata/_edit_lock_ = true
+
+[node name="FurnitureLeft" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 3
+position = Vector2(-1932, 0)
+texture = ExtResource("25_u5e3k")
+metadata/_edit_lock_ = true
+
+[node name="Door2" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 3
+position = Vector2(-1905, 0)
+texture = ExtResource("26_s00jh")
+metadata/_edit_lock_ = true
+
+[node name="Piano" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 5
+position = Vector2(1657, 119)
+texture = ExtResource("27_63pdg")
+script = ExtResource("28_vkp0d")
+low_index = 3
+high_index = 5
+y_threshold = 520.0
+metadata/_edit_lock_ = true
+
+[node name="ScreenEffect" type="Sprite2D" parent="Hid/Hallway"]
+z_index = 6
+position = Vector2(-161.5, -3.50003)
+scale = Vector2(3.39937, 1.19889)
+texture = ExtResource("29_ih5kf")
+metadata/_edit_lock_ = true
+
+[node name="Clown" type="CharacterBody2D" parent="Hid"]
+visible = false
+z_index = 3
+position = Vector2(218, 1090)
+
+[node name="ClownSprite" type="AnimatedSprite2D" parent="Hid/Clown"]
+position = Vector2(15.9999, 8)
+scale = Vector2(0.758036, 0.651339)
+sprite_frames = SubResource("SpriteFrames_c1ady")
+animation = &"idle"
+offset = Vector2(120, -720)
+script = SubResource("GDScript_1xkra")
+
+[node name="Ben" type="CharacterBody2D" parent="Hid"]
+z_index = 1
+position = Vector2(-176, 1082)
+motion_mode = 1
+script = ExtResource("17_fqnb3")
+
+[node name="Ben_Sprite" type="AnimatedSprite2D" parent="Hid/Ben"]
+z_index = 4
+position = Vector2(16.7144, 5)
+scale = Vector2(0.555365, 0.535768)
+sprite_frames = SubResource("SpriteFrames_vpgkp")
+animation = &"run"
+offset = Vector2(-15, -600.465)
+script = ExtResource("23_jt0cr")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Hid"]
+libraries = {
+"": SubResource("AnimationLibrary_gahyr")
+}
+
+[node name="HidingInside" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Room" type="CanvasGroup" parent="HidingInside"]
+position = Vector2(1370, 523)
+scale = Vector2(1.5, 1.5)
+
+[node name="Walls" type="Sprite2D" parent="HidingInside/Room"]
+z_index = 1
+texture = ExtResource("30_s80rg")
+metadata/_edit_lock_ = true
+
+[node name="WindowClose" type="Sprite2D" parent="HidingInside/Room"]
+z_index = 1
+texture = ExtResource("31_tx1es")
+metadata/_edit_lock_ = true
+
+[node name="DoorClose" type="Sprite2D" parent="HidingInside/Room"]
+z_index = 1
+texture = ExtResource("32_0u12x")
+script = ExtResource("33_e4cww")
+low_index = 2
+high_index = 3
+y_threshold = 360.0
+metadata/_edit_lock_ = true
+
+[node name="DoorOpen" type="Sprite2D" parent="HidingInside/Room"]
+visible = false
+z_index = 3
+texture = ExtResource("34_2ojdt")
+
+[node name="Floor" type="Sprite2D" parent="HidingInside/Room"]
+z_index = 1
+texture = ExtResource("35_p0o7y")
+metadata/_edit_lock_ = true
+
+[node name="Lamp" type="Sprite2D" parent="HidingInside/Room"]
+z_index = 2
+texture = ExtResource("36_t4o6u")
+metadata/_edit_lock_ = true
+
+[node name="Mirror" type="Sprite2D" parent="HidingInside/Room"]
+z_index = 2
+texture = ExtResource("37_a85jc")
+metadata/_edit_lock_ = true
+
+[node name="Rugs" type="Sprite2D" parent="HidingInside/Room"]
+z_index = 2
+texture = ExtResource("38_mqq4x")
+metadata/_edit_lock_ = true
+
+[node name="SwitchOn" type="Sprite2D" parent="HidingInside/Room"]
+z_index = 1
+texture = ExtResource("39_7y16l")
+metadata/_edit_lock_ = true
+
+[node name="Drawer" type="Sprite2D" parent="HidingInside/Room"]
+z_index = 3
+texture = ExtResource("40_sw7pw")
+script = ExtResource("28_vkp0d")
+low_index = 2
+high_index = 3
+y_threshold = 440.0
+metadata/_edit_lock_ = true
+
+[node name="TopLight" type="Sprite2D" parent="HidingInside/Room"]
+z_index = 3
+texture = ExtResource("41_hexmt")
+metadata/_edit_lock_ = true
+
+[node name="Bed" type="Sprite2D" parent="HidingInside/Room"]
+z_index = 3
+texture = ExtResource("42_0bvlx")
+script = ExtResource("28_vkp0d")
+low_index = 2
+high_index = 5
+y_threshold = 320.0
+x_threshold = 10.0
+metadata/_edit_lock_ = true
+
+[node name="ScreenEffect" type="Sprite2D" parent="HidingInside/Room"]
+z_index = 6
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("29_ih5kf")
+metadata/_edit_lock_ = true
+
+[node name="door_open" type="AudioStreamPlayer2D" parent="HidingInside/Room"]
+stream = ExtResource("43_ousre")
+volume_db = -15.0
+
+[node name="door_close" type="AudioStreamPlayer2D" parent="HidingInside/Room"]
+stream = ExtResource("44_ohium")
+volume_db = -5.0
+
+[node name="Clown" type="CharacterBody2D" parent="HidingInside"]
+visible = false
+z_index = 2
+position = Vector2(450, 1040)
+rotation = 0.162562
+scale = Vector2(0.7, 0.7)
+
+[node name="ClownSprite" type="AnimatedSprite2D" parent="HidingInside/Clown"]
+position = Vector2(15.9999, 8)
+scale = Vector2(0.758036, 0.651339)
+sprite_frames = SubResource("SpriteFrames_brj6i")
+animation = &"idle"
+offset = Vector2(120, -720)
+script = SubResource("GDScript_7kvvg")
+
+[node name="Ben" type="CharacterBody2D" parent="HidingInside"]
+visible = false
+z_index = -2
+position = Vector2(319, 934)
+motion_mode = 1
+script = ExtResource("17_fqnb3")
+
+[node name="Ben_Sprite" type="AnimatedSprite2D" parent="HidingInside/Ben"]
+z_index = 4
+position = Vector2(16.7144, 5)
+scale = Vector2(0.555365, 0.535768)
+sprite_frames = SubResource("SpriteFrames_gthnk")
+animation = &"run"
+offset = Vector2(-15, -600.465)
+script = ExtResource("23_jt0cr")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HidingInside"]
+libraries = {
+"": SubResource("AnimationLibrary_bo2vm")
+}
+
+[node name="jscare" type="AudioStreamPlayer2D" parent="HidingInside"]
+stream = ExtResource("45_rsk78")
+volume_db = -20.0
+
+[node name="RunAway" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Hallway" type="CanvasGroup" parent="RunAway"]
+position = Vector2(3511, 401)
+scale = Vector2(1.5, 1.5)
+
+[node name="Wall" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 1
+texture = ExtResource("24_h2j2w")
+metadata/_edit_lock_ = true
+
+[node name="Wall3" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 1
+position = Vector2(-1867.82, 0)
+texture = ExtResource("24_h2j2w")
+metadata/_edit_lock_ = true
+
+[node name="Wall2" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 1
+position = Vector2(1600, 0)
+texture = ExtResource("24_h2j2w")
+metadata/_edit_lock_ = true
+
+[node name="Floor" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 2
+texture = ExtResource("25_yofld")
+metadata/_edit_lock_ = true
+
+[node name="Floor3" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 2
+position = Vector2(-1900, 0)
+texture = ExtResource("25_yofld")
+metadata/_edit_lock_ = true
+
+[node name="Floor2" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 2
+position = Vector2(1600, 0)
+texture = ExtResource("25_yofld")
+metadata/_edit_lock_ = true
+
+[node name="RightFrame" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 3
+position = Vector2(26.75, 0)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightFrame3" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 3
+position = Vector2(-3443.97, 0)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightFrame2" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 3
+position = Vector2(-1570, -2.98023e-08)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 3
+position = Vector2(47, 0)
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp3" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 3
+position = Vector2(-3419.7, 0)
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp2" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 3
+position = Vector2(-1549, 0)
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="LeftFrame" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 3
+position = Vector2(137, 0)
+texture = ExtResource("28_einji")
+metadata/_edit_lock_ = true
+
+[node name="LeftFrame2" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 3
+position = Vector2(1991, 0)
+texture = ExtResource("28_einji")
+metadata/_edit_lock_ = true
+
+[node name="LeftDrawer" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 3
+position = Vector2(1976, 0)
+texture = ExtResource("29_634aj")
+metadata/_edit_lock_ = true
+
+[node name="LeftDrawer2" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 3
+position = Vector2(164.42, 0)
+texture = ExtResource("29_634aj")
+metadata/_edit_lock_ = true
+
+[node name="FurnitureRight" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 3
+position = Vector2(-1888, 0)
+texture = ExtResource("30_8mras")
+metadata/_edit_lock_ = true
+
+[node name="Rfurniture" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 1
+position = Vector2(1439.46, -3.6965)
+texture = ExtResource("31_mu3a4")
+
+[node name="FurnitureLeft" type="Sprite2D" parent="RunAway/Hallway"]
+z_index = 3
+position = Vector2(-1932, 0)
+texture = ExtResource("31_mu3a4")
+metadata/_edit_lock_ = true
+
+[node name="Clown" type="CharacterBody2D" parent="RunAway"]
+z_index = 3
+position = Vector2(-292, 1130)
+scale = Vector2(1.1, 1.1)
+
+[node name="ClownSprite" type="AnimatedSprite2D" parent="RunAway/Clown"]
+position = Vector2(15.9999, 8)
+scale = Vector2(0.758036, 0.651339)
+sprite_frames = SubResource("SpriteFrames_brj6i")
+animation = &"idle"
+offset = Vector2(120, -720)
+script = SubResource("GDScript_7kvvg")
+
+[node name="Ben" type="CharacterBody2D" parent="RunAway"]
+z_index = 1
+position = Vector2(1441, 1126)
+motion_mode = 1
+script = ExtResource("17_fqnb3")
+
+[node name="Ben_Sprite" type="AnimatedSprite2D" parent="RunAway/Ben"]
+z_index = 4
+position = Vector2(16.7144, 5)
+scale = Vector2(0.555365, 0.535768)
+sprite_frames = SubResource("SpriteFrames_gthnk")
+animation = &"run"
+offset = Vector2(-15, -600.465)
+script = ExtResource("23_jt0cr")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="RunAway"]
+libraries = {
+"": SubResource("AnimationLibrary_dupwn")
+}
+
+[node name="Running" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Hallway" type="CanvasGroup" parent="Running"]
+position = Vector2(3424, 325)
+scale = Vector2(1.4, 1.4)
+
+[node name="Wall" type="Sprite2D" parent="Running/Hallway"]
+z_index = 1
+texture = ExtResource("24_h2j2w")
+metadata/_edit_lock_ = true
+
+[node name="Wall2" type="Sprite2D" parent="Running/Hallway"]
+z_index = 1
+position = Vector2(1600, 0)
+texture = ExtResource("21_ge78i")
+metadata/_edit_lock_ = true
+
+[node name="Door" type="Sprite2D" parent="Running/Hallway"]
+z_index = 2
+texture = ExtResource("22_tuchv")
+metadata/_edit_lock_ = true
+
+[node name="Door" type="Area2D" parent="Running/Hallway/Door"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Running/Hallway/Door/Door"]
+position = Vector2(9.56619, 5.38152)
+scale = Vector2(1.11891, 1.16029)
+polygon = PackedVector2Array(340, -318, 363, -318, 363, -316, 367, -313, 367, -310, 370, -281.1, 370, 300, 367.3, 300, 358.3, 303, 352, 303, -19, 301, -19, 302, -56.2, 302, -62.2, 308, -72, 308, -72, 305.7, -74, 303, -86.2, 303, -102, 299.6, -102, -242, -100, -302, -98.4, -302, -93.4, -316, -87, -316, -1, -318, -1, -319, 340, -319)
+
+[node name="Door2" type="Sprite2D" parent="Running/Hallway/Door"]
+visible = false
+texture = ExtResource("46_0dtak")
+
+[node name="Floor" type="Sprite2D" parent="Running/Hallway"]
+z_index = 2
+texture = ExtResource("25_yofld")
+metadata/_edit_lock_ = true
+
+[node name="Floor2" type="Sprite2D" parent="Running/Hallway"]
+z_index = 2
+position = Vector2(1600, 0)
+texture = ExtResource("23_py6l5")
+metadata/_edit_lock_ = true
+
+[node name="WallAndFloor" type="Sprite2D" parent="Running/Hallway"]
+z_index = 2
+position = Vector2(-1919, 0)
+texture = ExtResource("24_kbie0")
+metadata/_edit_lock_ = true
+
+[node name="Clock" type="Area2D" parent="Running/Hallway/WallAndFloor"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Running/Hallway/WallAndFloor/Clock"]
+polygon = PackedVector2Array(-596, -500, -594, -418, -595.1, -418, -598.1, -379, -599.5, -379, -606.5, -352, -607.9, -352, -620.8, -329, -622.2, -329, -647.2, -305, -649.5, -305, -687.4, -282, -690.6, -282, -802.6, -230, -805.6, -230, -837.8, -223, -842.2, -223, -864, -227.4, -864, -228.7, -876, -233.7, -876, -235.1, -890, -247.1, -890, -249.4, -901, -266.4, -901, -270, -908, -295.7, -908, -305, -911, -344.9, -911, -424.1, -903.7, -478, -902.3, -478, -876, -539.3, -876, -540, -596, -540)
+
+[node name="Clock2" type="Sprite2D" parent="Running/Hallway/WallAndFloor"]
+visible = false
+position = Vector2(-7.86, 0)
+texture = ExtResource("47_b5obr")
+
+[node name="RightFrame" type="Sprite2D" parent="Running/Hallway"]
+z_index = 3
+position = Vector2(26.75, 0)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightFrame2" type="Sprite2D" parent="Running/Hallway"]
+z_index = 3
+position = Vector2(-1570, -2.98023e-08)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp" type="Sprite2D" parent="Running/Hallway"]
+z_index = 3
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp2" type="Sprite2D" parent="Running/Hallway"]
+z_index = 3
+position = Vector2(-1631.36, 0)
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="LeftFrame" type="Sprite2D" parent="Running/Hallway"]
+z_index = 3
+position = Vector2(159.395, 0)
+texture = ExtResource("28_einji")
+metadata/_edit_lock_ = true
+
+[node name="LeftFrame3" type="Sprite2D" parent="Running/Hallway"]
+z_index = 3
+position = Vector2(3123, 113)
+texture = ExtResource("28_einji")
+metadata/_edit_lock_ = true
+
+[node name="LeftFrame2" type="Sprite2D" parent="Running/Hallway"]
+z_index = 3
+position = Vector2(1991, 0)
+texture = ExtResource("28_einji")
+metadata/_edit_lock_ = true
+
+[node name="LeftDrawer" type="Sprite2D" parent="Running/Hallway"]
+z_index = 3
+position = Vector2(1976, 0)
+texture = ExtResource("29_634aj")
+metadata/_edit_lock_ = true
+
+[node name="LeftDrawer2" type="Sprite2D" parent="Running/Hallway"]
+z_index = 3
+position = Vector2(48, 0)
+texture = ExtResource("29_634aj")
+metadata/_edit_lock_ = true
+
+[node name="FurnitureRight" type="Sprite2D" parent="Running/Hallway"]
+z_index = 3
+position = Vector2(-1937.61, 0)
+texture = ExtResource("31_mu3a4")
+metadata/_edit_lock_ = true
+
+[node name="FurnitureLeft" type="Sprite2D" parent="Running/Hallway"]
+z_index = 3
+position = Vector2(-1932, 0)
+texture = ExtResource("25_u5e3k")
+metadata/_edit_lock_ = true
+
+[node name="Door2" type="Sprite2D" parent="Running/Hallway"]
+z_index = 3
+position = Vector2(-1905, 0)
+texture = ExtResource("26_s00jh")
+metadata/_edit_lock_ = true
+
+[node name="Door3" type="Area2D" parent="Running/Hallway/Door2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Running/Hallway/Door2/Door3"]
+polygon = PackedVector2Array(-552, -363.8, -552, -362, -548, -359, -548, -356, -545, -325.1, -545, -122, -546, 383, -548.2, 383, -553.2, 388, -561.5, 388, -566, 385.8, -606, 401.4, -614.9, 415, -621.8, 415, -625.7, 411.1, -640, 417.3, -640, 418.1, -662, 431.1, -662, 432, -682.3, 448, -684.5, 448, -761, 486.3, -761, 487.1, -786.5, 502, -789.5, 502, -860, 530.4, -860, 531.1, -874.2, 540, -903, 540, -903, 537.7, -910, 529.8, -910, 143, -909, 143, -909, -113, -908, -113, -906, -215, -904, -215, -901, -219, -896.2, -219, -886, -219.8, -809.5, -260, -806.3, -260, -692, -307.3, -692, -308.2, -628, -340.2, -628, -341.1, -609.6, -353, -606.3, -353, -571, -364.4, -571, -366.3)
+
+[node name="Door2" type="Sprite2D" parent="Running/Hallway/Door2"]
+visible = false
+texture = ExtResource("48_xwm0i")
+
+[node name="Piano" type="Sprite2D" parent="Running/Hallway"]
+z_index = 5
+position = Vector2(1657, 119)
+texture = ExtResource("27_63pdg")
+script = ExtResource("28_vkp0d")
+low_index = 3
+high_index = 5
+y_threshold = 520.0
+metadata/_edit_lock_ = true
+
+[node name="Piano" type="Area2D" parent="Running/Hallway/Piano"]
+metadata/_edit_lock_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Running/Hallway/Piano/Piano"]
+polygon = PackedVector2Array(800, 340, 798.4, 340, 774, 348.5, 774, 349.2, 728, 373.2, 728, 374.1, 722, 378.1, 722, 379.6, 701, 409, 699.9, 409, 664.6, 450, 446, 450, 446, 448.9, 434.3, 439, 424, 440.3, 424, 437.4, 422.3, 429, 368.2, 377, 366.4, 377, 305, 333, 305, 331.7, 303, 329, 301, 329, 301, 332.8, 297.8, 336, 289, 336, 289, 343.8, 285.8, 347, 280.3, 347, 272, 339.9, 272, 337.5, 270.7, 335, 261.2, 335, 258, 331.8, 258, 320, 257.1, 286, 232, 249.6, 232, 245.4, 217, 205.4, 217, 195.3, 212, 166.2, 212, 96, 213.2, 96, 222.2, 22, 223.5, 22, 232.4, -16, 233.7, -16, 253.7, -63, 254.9, -63, 277.9, -99, 279.1, -99, 316.1, -138, 318.3, -138, 417, -213, 417, -213.9, 502, -287.9, 502, -289.8, 587, -371.8, 587, -373.6, 639, -448.5, 639, -450, 800, -450)
+metadata/_edit_lock_ = true
+
+[node name="Piano2" type="Sprite2D" parent="Running/Hallway/Piano"]
+visible = false
+texture = ExtResource("49_15d8u")
+
+[node name="ScreenEffect" type="Sprite2D" parent="Running/Hallway"]
+z_index = 6
+position = Vector2(-161.5, -3.50003)
+scale = Vector2(3.39937, 1.19889)
+texture = ExtResource("29_ih5kf")
+metadata/_edit_lock_ = true
+
+[node name="Ben" type="CharacterBody2D" parent="Running"]
+z_index = 1
+position = Vector2(-650, 961)
+scale = Vector2(0.8, 0.8)
+motion_mode = 1
+script = ExtResource("17_fqnb3")
+
+[node name="Ben_Sprite" type="AnimatedSprite2D" parent="Running/Ben"]
+z_index = 4
+position = Vector2(16.7144, 5)
+scale = Vector2(0.555365, 0.535768)
+sprite_frames = SubResource("SpriteFrames_gthnk")
+animation = &"run"
+offset = Vector2(-15, -600.465)
+script = ExtResource("23_jt0cr")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Running"]
+libraries = {
+"": SubResource("AnimationLibrary_6wgaq")
+}
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Running"]
+
+[node name="Fade" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="Fade"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fade"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_vdm3m")
+}
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Corridor" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-4000, 0)
+motion_scale = Vector2(10, 6.666)
+motion_offset = Vector2(0, -1900)
+motion_mirroring = Vector2(7690.5, 0)
+
+[node name="Hallway" type="CanvasGroup" parent="ParallaxBackground/Corridor"]
+position = Vector2(1878.57, 434.286)
+scale = Vector2(1.43, 1.43)
+
+[node name="Wall" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 1
+texture = ExtResource("24_h2j2w")
+metadata/_edit_lock_ = true
+
+[node name="Wall3" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 1
+position = Vector2(-1867.82, 0)
+texture = ExtResource("24_h2j2w")
+metadata/_edit_lock_ = true
+
+[node name="Wall2" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 1
+position = Vector2(1600, 0)
+texture = ExtResource("24_h2j2w")
+metadata/_edit_lock_ = true
+
+[node name="Floor" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 2
+texture = ExtResource("25_yofld")
+metadata/_edit_lock_ = true
+
+[node name="Floor3" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 2
+position = Vector2(-1900, 0)
+texture = ExtResource("25_yofld")
+metadata/_edit_lock_ = true
+
+[node name="Floor2" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 2
+position = Vector2(1600, 0)
+texture = ExtResource("25_yofld")
+metadata/_edit_lock_ = true
+
+[node name="RightFrame" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 3
+position = Vector2(26.75, 0)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightFrame3" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 3
+position = Vector2(-3443.97, 0)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightFrame2" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 3
+position = Vector2(-1570, -2.98023e-08)
+texture = ExtResource("26_l5mbd")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 3
+position = Vector2(47, 0)
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp3" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 3
+position = Vector2(-3419.7, 0)
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="RightLamp2" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 3
+position = Vector2(-1549, 0)
+texture = ExtResource("27_ub41n")
+metadata/_edit_lock_ = true
+
+[node name="LeftFrame" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 3
+position = Vector2(137, 0)
+texture = ExtResource("28_einji")
+metadata/_edit_lock_ = true
+
+[node name="LeftFrame2" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 3
+position = Vector2(1991, 0)
+texture = ExtResource("28_einji")
+metadata/_edit_lock_ = true
+
+[node name="LeftDrawer" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 3
+position = Vector2(1976, 0)
+texture = ExtResource("29_634aj")
+metadata/_edit_lock_ = true
+
+[node name="LeftDrawer2" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 3
+position = Vector2(164.42, 0)
+texture = ExtResource("29_634aj")
+metadata/_edit_lock_ = true
+
+[node name="FurnitureRight" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 3
+position = Vector2(-1888, 0)
+texture = ExtResource("30_8mras")
+metadata/_edit_lock_ = true
+
+[node name="Rfurniture" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 1
+position = Vector2(1439.46, -3.6965)
+texture = ExtResource("31_mu3a4")
+
+[node name="FurnitureLeft" type="Sprite2D" parent="ParallaxBackground/Corridor/Hallway"]
+z_index = 3
+position = Vector2(-1932, 0)
+texture = ExtResource("31_mu3a4")
+metadata/_edit_lock_ = true
+
+[node name="Clown" type="CharacterBody2D" parent="ParallaxBackground"]
+z_index = 3
+position = Vector2(-1804, 601)
+script = ExtResource("17_fqnb3")
+
+[node name="ClownSprite" type="AnimatedSprite2D" parent="ParallaxBackground/Clown"]
+position = Vector2(15.9999, 8)
+scale = Vector2(0.758036, 0.651339)
+sprite_frames = SubResource("SpriteFrames_brj6i")
+animation = &"idle"
+script = SubResource("GDScript_7kvvg")
+
+[node name="Ben" type="CharacterBody2D" parent="ParallaxBackground"]
+z_index = 1
+position = Vector2(-237, 1050)
+scale = Vector2(0.9, 0.9)
+motion_mode = 1
+script = ExtResource("17_fqnb3")
+
+[node name="Ben_Sprite" type="AnimatedSprite2D" parent="ParallaxBackground/Ben"]
+z_index = 4
+position = Vector2(16.7144, 5)
+scale = Vector2(0.555365, 0.535768)
+sprite_frames = SubResource("SpriteFrames_gthnk")
+animation = &"run"
+offset = Vector2(-15, -600.465)
+script = ExtResource("23_jt0cr")
+
+[node name="Camera2D" type="Camera2D" parent="ParallaxBackground/Ben"]
+position = Vector2(-680, -694.465)
+scale = Vector2(8.86, 8.86)
+zoom = Vector2(0.71, 0.71)
+limit_left = -2185
+limit_smoothed = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+volume_db = -15.0
+max_distance = 1e+09
+
+[node name="GUI" parent="." instance=ExtResource("24_glkfb")]
+process_mode = 3
+layer = 3
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("51_lqh8d")
+volume_db = -3.0

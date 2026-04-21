@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://u1epc4s643cp"
+path="res://.godot/imported/HORSE GALLOP 1.mp3-664b407680be5cbff42ac6acd7b1f139.mp3str"
+
+[deps]
+
+source_file="res://Sound/SFX/TEMP/HORSE GALLOPING/HORSE GALLOP 1.mp3"
+dest_files=["res://.godot/imported/HORSE GALLOP 1.mp3-664b407680be5cbff42ac6acd7b1f139.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

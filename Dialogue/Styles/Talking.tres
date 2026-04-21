@@ -1,0 +1,72 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=9 format=3 uid="uid://cqq27sb1rcn4l"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="1_xqej5"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_dxsgt"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="4_v5v1t"]
+[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn" id="5_ob4t4"]
+[ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn" id="7_rqd71"]
+
+[sub_resource type="Resource" id="Resource_5a74d"]
+script = ExtResource("2_dxsgt")
+scene = ExtResource("4_v5v1t")
+overrides = {
+"disabled": "true"
+}
+
+[sub_resource type="Resource" id="Resource_fmtoq"]
+script = ExtResource("2_dxsgt")
+scene = ExtResource("5_ob4t4")
+overrides = {
+"box_animation_out": "1",
+"box_color_custom": "Color(1, 1, 1, 1)",
+"box_color_use_global": "false",
+"box_margin_bottom": "0.0",
+"box_panel": "\"res://Common/Theme/Choice Buttons/talking_panel.tres\"",
+"box_size": "Vector2(1050, 180)",
+"name_label_box_modulate": "Color(1, 1, 1, 1)",
+"name_label_box_offset": "Vector2(0, -15)",
+"name_label_box_panel": "\"res://Common/Theme/Choice Buttons/label_panel.tres\"",
+"name_label_box_use_global_color": "false",
+"name_label_custom_color": "Color(0, 0, 0, 1)",
+"name_label_custom_font_size": "38.0",
+"name_label_font": "\"res://Common/Fonts/CoveredByYourGrace-Regular.ttf\"",
+"name_label_use_character_color": "false",
+"name_label_use_global_color": "false",
+"name_label_use_global_font": "false",
+"name_label_use_global_font_size": "false",
+"next_indicator_animation": "2",
+"next_indicator_enabled": "false",
+"normal_font": "\"res://Common/Fonts/CoveredByYourGrace-Regular.ttf\"",
+"text_custom_color": "Color(0, 0, 0, 1)",
+"text_size": "48.0",
+"text_use_global_color": "false",
+"text_use_global_font": "false",
+"text_use_global_size": "false"
+}
+
+[sub_resource type="Resource" id="Resource_l8p4r"]
+script = ExtResource("2_dxsgt")
+scene = ExtResource("7_rqd71")
+overrides = {
+"boxes_min_size": "Vector2(500, 70)",
+"boxes_stylebox_focused": "\"res://Common/Theme/Choice Buttons/choice_normal.tres\"",
+"boxes_stylebox_hovered": "\"res://Common/Theme/Choice Buttons/choice_hover.tres\"",
+"boxes_stylebox_normal": "\"res://Common/Theme/Choice Buttons/choice_normal.tres\"",
+"boxes_stylebox_pressed": "\"res://Common/Theme/Choice Buttons/choice_pressed.tres\"",
+"font_custom": "\"res://Common/Fonts/CoveredByYourGrace-Regular.ttf\"",
+"font_size_custom": "38.0",
+"font_size_use_global": "false",
+"font_use_global": "false",
+"text_color_custom": "Color(0, 0, 0, 1)",
+"text_color_focused": "Color(0, 0, 0, 1)",
+"text_color_hovered": "Color(0.360784, 0.65098, 0.4, 1)",
+"text_color_pressed": "Color(0.117647, 0.443137, 0.243137, 1)",
+"text_color_use_global": "false"
+}
+
+[resource]
+script = ExtResource("1_xqej5")
+name = "Talking"
+base_overrides = {}
+layers = Array[ExtResource("2_dxsgt")]([SubResource("Resource_5a74d"), SubResource("Resource_fmtoq"), SubResource("Resource_l8p4r")])
+metadata/_latest_layer = 2

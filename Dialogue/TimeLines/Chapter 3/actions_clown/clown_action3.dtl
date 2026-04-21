@@ -1,0 +1,5 @@
+if {Corridor.noClo} == 3:
+	Clown: I have lots and lots of toys...
+	- *Take a step*
+		[signal arg="action_stay"]
+		[end_timeline]

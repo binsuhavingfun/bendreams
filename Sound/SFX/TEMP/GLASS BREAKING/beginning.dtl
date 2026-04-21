@@ -1,0 +1,6 @@
+Ben: !?
+Ben: Huh? What was that sound?
+Ben: A piano?
+Ben: Who could be playing at this hour?
+- Check Out
+	[signal arg="checking_out"]

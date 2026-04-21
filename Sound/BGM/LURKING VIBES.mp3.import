@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wr28fbfqtbqn"
+path="res://.godot/imported/LURKING VIBES.mp3-22cbed0e475da3e9a2c54c3270d1cb10.mp3str"
+
+[deps]
+
+source_file="res://Sound/BGM/LURKING VIBES.mp3"
+dest_files=["res://.godot/imported/LURKING VIBES.mp3-22cbed0e475da3e9a2c54c3270d1cb10.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

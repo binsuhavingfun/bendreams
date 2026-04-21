@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5u14d3jyb403"
+path="res://.godot/imported/jumpscare-2-206591.mp3-0305492fb669f7960d667b43ff99bbef.mp3str"
+
+[deps]
+
+source_file="res://Sound/SFX/TEMP/DOLL JUMPSCARE/jumpscare-2-206591.mp3"
+dest_files=["res://.godot/imported/jumpscare-2-206591.mp3-0305492fb669f7960d667b43ff99bbef.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

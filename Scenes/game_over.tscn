@@ -1,0 +1,106 @@
+[gd_scene load_steps=6 format=3 uid="uid://bdsvob0nxrwgj"]
+
+[ext_resource type="Script" path="res://Scripts/OverMenu.gd" id="1_painj"]
+[ext_resource type="Theme" uid="uid://yjllmaelw1h7" path="res://Common/Theme/pmenu.tres" id="1_wfgcm"]
+[ext_resource type="FontFile" uid="uid://ci4l8lprqx3tv" path="res://Common/Fonts/CoveredByYourGrace-Regular.ttf" id="2_22suq"]
+[ext_resource type="AudioStream" uid="uid://bpca743gk15fm" path="res://Sound/SFX/OFF/UI/Game Over.mp3" id="4_kbge8"]
+[ext_resource type="AudioStream" uid="uid://b3jr3kwey0py6" path="res://Sound/BGM/ENDING THEME.mp3" id="5_eet1g"]
+
+[node name="game_over" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_painj")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0392157, 0.0392157, 0.0392157, 0.94902)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_wfgcm")
+theme_override_fonts/font = ExtResource("2_22suq")
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RetryButton" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../QuitButton")
+focus_neighbor_bottom = NodePath("../Menu")
+focus_next = NodePath("../Menu")
+focus_previous = NodePath("../QuitButton")
+theme = ExtResource("1_wfgcm")
+theme_override_colors/font_color = Color(0.597176, 0.597176, 0.597176, 1)
+theme_override_colors/font_pressed_color = Color(0.807843, 0.8, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 0.443137, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 0.443137, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.807843, 0.8, 0, 1)
+theme_override_colors/font_outline_color = Color(0.912289, 0.912289, 0.912289, 1)
+text = "Retry
+"
+
+[node name="Menu" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../RetryButton")
+focus_neighbor_bottom = NodePath("../QuitButton")
+focus_next = NodePath("../QuitButton")
+focus_previous = NodePath("../RetryButton")
+theme = ExtResource("1_wfgcm")
+theme_override_colors/font_color = Color(0.596078, 0.596078, 0.596078, 1)
+theme_override_colors/font_pressed_color = Color(0.807843, 0.8, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 0.443137, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 0.443137, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.807843, 0.8, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+text = "Menu
+"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Menu")
+focus_neighbor_bottom = NodePath("../RetryButton")
+focus_next = NodePath("../RetryButton")
+focus_previous = NodePath("../Menu")
+theme = ExtResource("1_wfgcm")
+theme_override_colors/font_color = Color(0.596078, 0.596078, 0.596078, 1)
+theme_override_colors/font_pressed_color = Color(0.806127, 0.798622, 3.85046e-07, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 0.443137, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 0.443137, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.513726, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.807843, 0.8, 0, 1)
+text = "Quit"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_kbge8")
+
+[node name="bgmusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_eet1g")
+autoplay = true
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/RetryButton" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="finished" from="bgmusic" to="." method="_on_bgmusic_finished"]

@@ -1,0 +1,3 @@
+- Interact
+	Ben: Hey there, little friend. Are you here to help me fight the nightmares?
+	[signal arg="stop_chat"]

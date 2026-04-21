@@ -1,0 +1,4 @@
+if {Corridor.noClo} == 1:
+	Clown: Yes... Come closer boy...
+	[signal arg="action_stay"]
+	[end_timeline]

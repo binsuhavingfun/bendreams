@@ -1,0 +1,172 @@
+[gd_scene load_steps=13 format=3 uid="uid://cq0gponc1ph17"]
+
+[ext_resource type="Script" path="res://Scripts/transition.gd" id="1_q72hp"]
+[ext_resource type="FontFile" uid="uid://ci4l8lprqx3tv" path="res://Common/Fonts/CoveredByYourGrace-Regular.ttf" id="2_663np"]
+
+[sub_resource type="Animation" id="Animation_s86ws"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CenterContainer/VBoxContainer/Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1onu0"]
+resource_name = "fade_in"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CenterContainer/VBoxContainer/Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_d2le5"]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CenterContainer/VBoxContainer/Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e7ptp"]
+_data = {
+"RESET": SubResource("Animation_s86ws"),
+"fade_in": SubResource("Animation_1onu0"),
+"fade_out": SubResource("Animation_d2le5")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r6gqc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a8tk5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_362c2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_74wyc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_clht4"]
+
+[sub_resource type="Theme" id="Theme_3ya6e"]
+Button/colors/font_color = Color(0.393086, 0.393086, 0.393085, 1)
+Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_focus_color = Color(0.737255, 0.0431373, 0.262745, 1)
+Button/colors/font_hover_color = Color(0.737255, 0.0431373, 0.262745, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0.486275, 0.0156863, 0.160784, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
+Button/constants/h_separation = 4
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 104
+Button/fonts/font = ExtResource("2_663np")
+Button/styles/disabled = SubResource("StyleBoxEmpty_r6gqc")
+Button/styles/focus = SubResource("StyleBoxEmpty_a8tk5")
+Button/styles/hover = SubResource("StyleBoxEmpty_362c2")
+Button/styles/normal = SubResource("StyleBoxEmpty_74wyc")
+Button/styles/pressed = SubResource("StyleBoxEmpty_clht4")
+Label/colors/font_color = Color(0.0536749, 0.00535163, 0.00474467, 1)
+Label/colors/font_outline_color = Color(1, 1, 1, 1)
+Label/colors/font_shadow_color = Color(1, 1, 1, 0.305882)
+Label/constants/outline_size = 8
+Label/constants/shadow_offset_x = 5
+Label/constants/shadow_offset_y = 7
+Label/constants/shadow_outline_size = 10
+Label/font_sizes/font_size = 144
+Label/fonts/font = null
+
+[node name="ChapTransition" type="CanvasLayer"]
+script = ExtResource("1_q72hp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_e7ptp")
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.0475577, 0.0475576, 0.0475576, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme = SubResource("Theme_3ya6e")
+text = "CHAPTER 1"

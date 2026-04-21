@@ -1,0 +1,6 @@
+Ben: ........
+[sound path="res://Sound/SFX/OFF/door/door_opening .wav" volume="0.0"]
+Ben: ........ ....
+[sound path="res://Sound/SFX/TEMP/GLASS BREAKING/BREAKING GLASS 3.mp3" volume="0.0"]
+- Wake Up
+	[signal arg="out_of_bed"]

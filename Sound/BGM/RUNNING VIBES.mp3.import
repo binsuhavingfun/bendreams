@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d2s2uiaws66r5"
+path="res://.godot/imported/RUNNING VIBES.mp3-6309185f8a82e2c6af20a8756137450b.mp3str"
+
+[deps]
+
+source_file="res://Sound/BGM/RUNNING VIBES.mp3"
+dest_files=["res://.godot/imported/RUNNING VIBES.mp3-6309185f8a82e2c6af20a8756137450b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dvfeiy2uo6eyo"
+path="res://.godot/imported/HORSE BREATHING.mp3-589e9a964740c5587d20b291b4b5a9a9.mp3str"
+
+[deps]
+
+source_file="res://Sound/SFX/TEMP/HORSE NEIGHING/HORSE BREATHING.mp3"
+dest_files=["res://.godot/imported/HORSE BREATHING.mp3-589e9a964740c5587d20b291b4b5a9a9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

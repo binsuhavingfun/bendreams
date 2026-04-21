@@ -1,0 +1,16 @@
+[signal arg="turn_back"]
+Ben: Huh?
+Ben: wha-what happened..
+[signal arg="appear"]
+Ben: It's just my reflection... where did the sound come from...
+"Alt Ben": Ben, listen to me. There’s something you need to know.
+Ben: I-it just spoke! 
+Ben: My reflection!
+Ben: This dream has been to bizzare..
+Ben: I can't trust it..
+"Alt Ben": No... You must listen to me..
+Ben: You can't force me to.
+- Break the glass
+	[signal arg="Over"]
+- Listen to him
+	[signal arg="Truth"]

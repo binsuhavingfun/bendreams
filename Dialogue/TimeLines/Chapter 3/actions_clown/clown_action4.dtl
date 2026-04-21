@@ -1,0 +1,5 @@
+if :
+	Clown: You will have tons of fun and joy....
+	- *Take a step*
+		[signal arg="action_stay"]
+		[end_timeline]

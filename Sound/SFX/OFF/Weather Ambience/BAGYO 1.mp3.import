@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ruo683r5as0k"
+path="res://.godot/imported/BAGYO 1.mp3-6d8db03ee37ad75bc357d91e7cf70377.mp3str"
+
+[deps]
+
+source_file="res://Sound/SFX/OFF/Weather Ambience/BAGYO 1.mp3"
+dest_files=["res://.godot/imported/BAGYO 1.mp3-6d8db03ee37ad75bc357d91e7cf70377.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

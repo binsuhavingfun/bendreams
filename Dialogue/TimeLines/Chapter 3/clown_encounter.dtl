@@ -1,0 +1,12 @@
+[signal arg="clown_enter"]
+[wait time="1.5"]
+Ben: W-who are you and w-what are you doing here...
+Clown: Hiiiiii..... Little boy.... Do you wanna play?
+Ben: Wha..What?
+- Run away
+	[signal arg="action_run"]
+	Ben: I-I'm not alone!
+	Clown: Hehehe....
+	[signal arg="clown_follows"]
+- Stay and play
+	[signal arg="action_stay"]

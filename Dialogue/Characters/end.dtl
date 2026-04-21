@@ -1,0 +1,9 @@
+Ben: Maybe I should wait and see what happens.
+"Alt Ben": Ben, listen to me. There’s something you need to know.
+Ben: What? How are you talking?
+Ben: ou’re not alive, Ben. You passed away in your sleep. People think it was an illness, but it was your own shadow that took your life.
+Ben: My shadow? How is that possible?
+Ben: The shadow is a part of you. Ben, you ended your own life.
+[signal arg="shadow"]
+Narrator: No, that can’t be true. But... it all makes sense now
+[signal arg="end"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://efxnq14kroxq"
+path="res://.godot/imported/DREAM THEME.mp3-fdee54b91d7f06e5bda398f7c1b05a0e.mp3str"
+
+[deps]
+
+source_file="res://Sound/BGM/DREAM THEME.mp3"
+dest_files=["res://.godot/imported/DREAM THEME.mp3-fdee54b91d7f06e5bda398f7c1b05a0e.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

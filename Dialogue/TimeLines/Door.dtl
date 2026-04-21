@@ -1,0 +1,6 @@
+if {Bedroom.doorClosed} == true:
+	- Open Door
+		[signal arg="doorOpen"]
+elif {Bedroom.doorClosed} == false:
+	- Close Door
+		[signal arg="doorClosed"]

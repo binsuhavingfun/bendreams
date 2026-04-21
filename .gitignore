@@ -1,0 +1,10 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Local runtime and backup files
+godot_startup.log
+*.tmp
+*.bak
+
+# Local save data
+User/Data/*.save

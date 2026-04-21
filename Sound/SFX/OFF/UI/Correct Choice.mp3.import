@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cse8ycowthvqn"
+path="res://.godot/imported/Correct Choice.mp3-c879ecfb7e3d408e7bbaa5af4e76b2d1.mp3str"
+
+[deps]
+
+source_file="res://Sound/SFX/OFF/UI/Correct Choice.mp3"
+dest_files=["res://.godot/imported/Correct Choice.mp3-c879ecfb7e3d408e7bbaa5af4e76b2d1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
